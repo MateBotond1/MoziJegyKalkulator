@@ -18,4 +18,10 @@ if (Diak == "Igen" || Diak == "igen")
     Allapot=true;
 }
 int alapossz = PopcornAR * PopcornDB + Mozijegyar;
-Console.WriteLine($"A teljes ár:{alapossz}");
+double Tossz = alapossz;
+if (Életkor < 18 || Allapot == true)
+{
+    double Tked = 1 - Kedvezmeny;
+    Tossz = alapossz * Tked;
+}
+Console.WriteLine($"A fizetendő összeg {Tossz} ");
