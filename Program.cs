@@ -24,4 +24,17 @@ if (Életkor < 18 || Allapot == true)
     double Tked = 1 - Kedvezmeny;
     Tossz = alapossz * Tked;
 }
-Console.WriteLine($"A fizetendő összeg {Tossz} ");
+Console.WriteLine("--------ÖSSZESÍTŐ--------");
+Console.Write("Vásárló neve: ");
+Console.WriteLine($"{VNev} ({Életkor})");
+Console.Write("Rendelés: ");
+Console.WriteLine($"1 db Mozijegy + {PopcornDB} db Popcorn");
+Console.Write("Alapösszeg: ");
+Console.WriteLine($"{alapossz} Ft");
+Console.Write("Fizetendő végösszeg: ");
+Console.WriteLine($"{Tossz} Ft ");
+if (Allapot == true)
+{
+    Console.Write("Státusz: ");
+    Console.WriteLine($"{Kedvezmeny * 100}% kedvezmény érvényesítve!");
+}
