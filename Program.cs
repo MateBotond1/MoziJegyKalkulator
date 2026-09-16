@@ -12,3 +12,10 @@ Console.WriteLine("Popcorn ára");
 int PopcornAR = int.Parse(Console.ReadLine());
 Console.WriteLine("Kedvezmény");
 double Kedvezmeny = double.Parse(Console.ReadLine());
+bool Allapot = false;
+if (Diak == "Igen" || Diak == "igen")
+{
+    Allapot=true;
+}
+int alapossz = PopcornAR * PopcornDB + Mozijegyar;
+Console.WriteLine($"A teljes ár:{alapossz}");
